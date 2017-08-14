@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Some website</title>
+    </head>
+    <body>
+        {{> header}}
+        <p>{{screamIt pageTitle}}</p>
+        <p>We know you like:</p>
+        <ul>
+            {{#each likes}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{> footer}}
+    </body>
+</html>
