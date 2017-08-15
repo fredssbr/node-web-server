@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Some website</title>
+    </head>
+    <body>
+        {{> header}}
+        <p>I am a ten year experienced software developer. Here's a list of projects and technologies I've worked on:</p>
+        <ul>
+            {{#each projects}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        {{> footer}}
+    </body>
+</html>

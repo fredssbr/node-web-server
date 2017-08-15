@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-    res.render('maintenance.hbs');
+    //res.render('maintenance.hbs');
     next();
 });
 
@@ -59,6 +59,18 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'About page'
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'About page',
+        projects: [
+            'Java EE developer for a leading Brazilian cosmetic company',
+            'PL/SQL developer for a multinational bank',
+            'Front-end developer for a small local business',
+            'Full-stack architect with DevOps'
+        ]
     });
 });
 
