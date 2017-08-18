@@ -64,12 +64,13 @@ app.get('/about', (req, res) => {
 
 app.get('/projects', (req, res) => {
     res.render('projects.hbs', {
-        pageTitle: 'About page',
+        pageTitle: 'Projects',
         projects: [
-            'Java EE developer for a leading Brazilian cosmetic company',
+            'Java EE developer for a leading Brazilian cosmetics company',
             'PL/SQL developer for a multinational bank',
             'Front-end developer for a small local business',
-            'Full-stack architect with DevOps'
+            'Full-stack architect with DevOps',
+            'Part time hitman with lasers'
         ]
     });
 });
